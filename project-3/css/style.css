@@ -1,0 +1,334 @@
+:root{
+    --main-color: #ff305b;
+    --section-color: #f1f1f1;
+}
+.main-color{
+    color: var(--main-color);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+#nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0.5) !important ;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: var(--main-color);
+}
+.navbar-dark .navbar-brand{
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header{
+    background-image: url(../img/slider/slider-01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.layer{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+}
+.container h1 {
+    color: #ff305b;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.header h3::after {
+    content: '|';
+    animation-name: typing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing {
+    0%{content: '|';}
+    5%{content: 'D|';}
+    10%{content: 'De|';}
+    15%{content: 'Dev|';}
+    20%{content: 'Deve|';}
+    25%{content: 'Devel|';}
+    30%{content: 'Develo|';}
+    35%{content: 'Develop|';}
+    40%{content: 'Develope|';}
+    45%{content: 'Developer|';}
+    50%{content: 'Develope|';}
+    55%{content: 'Develop|';}   
+    60%{content: 'Develo|';}
+    65%{content: 'Devel|';}
+    70%{content: 'Deve|';}
+    75%{content: 'Dev|';}
+    80%{content: 'De|';}
+    85%{content: 'D|';}
+    90%{content: '|';}
+    
+}
+
+
+.about-img{
+    border: 7px solid #555;
+    border-radius: 10px;
+}
+.about-img .about-img-content{
+    transition: all 0.5s ease;
+    transform: translate(25px, 30px);
+    overflow: hidden;
+}
+.about-img .about-img-content:hover{
+    .hover-img{
+        top: -30px;
+    }
+}
+.hover-img{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translate(25px, 30px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: -25px;
+    transition: top 0.7s ease;
+}
+.hover-img i{
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.about-content p{
+    font-size: 18px;
+    line-height: 1.8;
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+}
+
+.about-content ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-content ul li{
+    padding: 10px 0;
+    width: 50%;
+    
+}
+
+.about-content ul li span{
+    font-weight: bold;
+}
+
+.about-content ul li a{
+    color: #aaa;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.about-content h2::before {
+    content: "";
+    border: 3px solid #ff305b;
+    
+}
+
+.btn-download , .btn-contact , .btn-send{
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+
+.btn-download:hover , .btn-contact:hover , .btn-send:hover{
+    background-color: #ec2403;
+    color: #fff;
+}
+
+.btn-contact {
+    position: relative;
+    left: 25%;
+}
+ul a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.services{
+    background-color: var(--section-color);
+}
+
+.service-item i{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.service-item{
+    transition: all 0.5s ease;
+    padding: 20px;
+    
+}
+.service-item:hover{
+    background-color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.line-1{
+    width: 100px;
+    height: 2px;
+    background-color: var(--main-color);
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.line-2{
+    width: 150px;
+    height: 2px;
+    background-color: var(--main-color);
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.line-3{
+    width: 100px;
+    height: 2px;
+    background-color: var(--main-color);
+    margin: auto;   
+    margin-bottom: 5px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: transparent;
+    color: var(--main-color);
+}
+.nav-pills .nav-link.active:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.portfolio-link{
+    color: var(--main-color);
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.portfolio-link:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.testimonial {
+    background-color: var(--section-color);
+    padding: 100px;
+}
+
+.testimonial-item i{
+    color: var(--main-color);
+    font-size: 35px;
+    padding: 10px 0px;
+}
+
+.feedback-content {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+}
+
+.feedback-content h5 ,.feedback-content h5 i{
+    color: #777;
+    padding-right: 5px;
+}
+
+.stars i {
+    color: #f1c30d;
+}
+
+.feedback-content::before {
+    content: "";
+    width: 300px;
+    height: 300px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg) translate(-215px,0px);
+
+}
+.col-lg-4 a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+.input-style
+{
+    border-radius: 7px;
+    border: 1px solid grey;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+    margin: 10px 0;
+}
+.input-style:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+.footer ul li {
+    list-style: none;
+    padding: 10px;
+    color: white;
+}
+.footer {
+    background-color: #333;
+}
+.footer a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+.footer li a {
+    text-decoration: none;
+    color: white;
+}
+.footer li a:hover {
+    color: var(--main-color);
+}
+.footer p {
+    margin: auto;
+}
+

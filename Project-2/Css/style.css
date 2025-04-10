@@ -1,0 +1,115 @@
+:root {
+    --main-color: #8e7754;
+}
+.text-clr {
+    color: #8e7754;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Caveat", cursive;
+}
+
+.navbar-brand .logo {
+    width: 40%;
+}
+
+.header {
+    height: 100vh;
+    background-image: url(../images/drew-coffman-1872.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+.layer p {
+    font-size: 30px;
+}
+.layer h1 {
+    font-size: 50px;
+
+}
+.layer button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+}
+.layer button:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+.layer .btn-1 {
+    background-color: var(--main-color);
+    border: 1px solid white;
+}
+.layer .btn-2 {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.img-about {
+    width: 80%;
+}
+.about ul li i {
+    font-size: 25px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #8e7754;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contacts ul li i {
+    font-size: 25px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #8e7754;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Portfolio {
+    background-color: #f8f8f8;
+}
+.col-lg-4 {
+    flex-shrink: 2;
+}
+.contacts {
+    background-color: #f8f8f8;
+}
+.footer {
+    background-color: #403d38;
+}
+.footer p {
+    font-size: 18px;
+}
+.foot {
+    background-color: #353330;
+}
+
+.foot i {
+    font-size: 40px;
+    margin: 5px;
+    color: #83807c;
+    margin-bottom: 30px;
+}
+
+
