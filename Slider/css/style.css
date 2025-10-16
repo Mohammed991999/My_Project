@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+.item{
+    position: relative;
+}
+.item img {
+    border-radius: 8px;
+}
+.item img , #next ,#close , #previos{
+    cursor: pointer;
+}
+.item-caption{
+    position: absolute;
+    width: 80%;
+    bottom: 10px;
+    left: 10%;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+.row {
+    row-gap: 30px;
+}
+
+.lightBoxContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.lightboxItem{
+    width: 40%;
+    height: 500px;
+    background-size: 100% 100%;
+}
+#close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
