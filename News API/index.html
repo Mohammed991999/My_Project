@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <title>API</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <label for="news" class="form-label">
+                <i class="fas fa-newspaper"></i>
+                اختر نوع الأخبار:
+            </label>
+            <select id="news" name="News" class="form-select form-select-lg">
+                <option value="general">📰 أخبار عامة</option>
+                <option value="business">💼 أخبار الأعمال</option>
+                <option value="health">🏥 أخبار الصحة</option>
+                <option value="technology">💻 أخبار التكنولوجيا</option>
+                <option value="sports">⚽ أخبار الرياضة</option>
+            </select>
+        </div>
+
+        <div class="row" id="rowData">
+            <div class="loading">
+                <i class="fas fa-spinner fa-spin"></i> جاري التحميل...
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
